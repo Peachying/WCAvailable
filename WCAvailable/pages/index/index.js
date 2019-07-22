@@ -13,8 +13,8 @@ Page({
   bindChange: function (e) {
     const val = e.detail.value
     this.setData({
-      building: this.data.building[val[0]],
-      gender: this.data.gender[val[1]]
+      building: val[0],
+      gender: val[1]
     })
   },  
   switchToWCFinding: function () {
