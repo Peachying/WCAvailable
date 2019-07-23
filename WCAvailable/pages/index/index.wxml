@@ -1,9 +1,9 @@
 <!--index.wxml-->
 <view class="choice">
-    <view class="selector_title">Building  Gender</view> 
+    <view class="selector_title">Floor  Gender</view> 
     <picker-view  style="width: 100%; height: 180rpx;" value="{{value}}" bindchange="bindChange">
         <picker-view-column >
-            <view  class="selector" wx:for="{{buildingArray}}" wx:key="{{index}}">B{{item}}</view>
+            <view  class="selector" wx:for="{{floorArray}}" wx:key="{{index}}">Floor{{item}}</view>
         </picker-view-column>
         <picker-view-column>
             <view class="selector" wx:for="{{genderArray}}" wx:key="{{index}}">{{item}}</view>

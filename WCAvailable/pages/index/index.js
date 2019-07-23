@@ -7,13 +7,13 @@ Page({
    genderArray:["Male","Female"],
    roomArray:["Gents","Ladies"],
    gender:"Male",
-   buildingArray:["01","05","06"],
-   building:"01",
+   floorArray:["01","02","03","04", "05","06"],
+   floor:"01",
   },
   bindChange: function (e) {
     const val = e.detail.value
     this.setData({
-      building: val[0],
+      floor: val[0],
       gender: val[1]
     })
   },  
